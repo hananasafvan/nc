@@ -1,0 +1,302 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Helvetica Neue',Arial, Helvetica, sans-serif;
+}
+body{
+    background: black;
+    color: white;
+}
+.logomain svg{
+    fill:rgb(229, 9, 20);
+    position: absolute;
+    height: 37px;
+}
+.heder{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKA5I6UW2DldPIyTmAwcXTI1Y_LHAw52SKWm4GyTllqVzHD7zC);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.hederbtn1{
+
+    box-sizing: 1px;
+    background:transparent;
+    color: white;
+    width: 125px;
+    height: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+    outline: auto;
+    outline-color: lightslategray;
+
+}
+.hederbtn2{
+    height: 32px;
+    width: 75px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background:rgb(229, 9, 20);
+    margin-left: 25px;
+    cursor: pointer;
+}
+.hederbtn2:hover{
+    background: rgb(190, 45, 45);
+}
+.maintext{
+
+    position: absolute;
+    margin-top: 170px;
+    margin-left: 100px;
+    text-align: center;
+    height: 400px;
+    width: 910px;
+    
+}
+.textline1{
+    font-size: 46px;
+    font-weight: 700px;
+    font-family: 'Netflix Font', sans-serif;
+}
+.textline2{
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Netflix Font', sans-serif;
+ 
+}
+.textline3{
+font-size:20px ;
+margin-top: 20px;
+font-family: 'Netflix Font', sans-serif;
+}
+.emailform{
+    background:transparent;
+    box-shadow: none;
+    border-color: gray;
+    border-radius: 4px;
+    border-style: solid;
+    overflow: hidden;
+   width: 400px;
+   height: 50px;
+   float: left;
+   margin-left: 190px;
+   padding-left: 20px;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 20px;
+   
+}
+.startbtn{
+    float: left;
+    margin-left: 10px;
+    height: 50px;
+    width: 220px;
+    border-radius:4px ;
+    box-shadow: none;
+    border-style: solid;
+    border: none;
+    background:rgb(229, 9, 20);
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+.startbtn:hover{
+    background: rgb(190, 45, 45);
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.textcol{
+    flex-basis:50% ;
+    margin-bottom: 20px;
+    
+
+}
+
+.media{
+    position: relative;
+    flex: 50%;
+    margin-bottom: 20px;
+    
+}
+.media.s1 img{
+   width: 400px;
+
+}
+.media.s1 video{
+    width: 293px;
+    position: absolute;
+    top: 62px;
+    left: 53px;
+
+}
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+section div.downlod{
+    border:2px solid gray;
+    border-radius: 8px;
+    padding: 10px;
+    height: 95px;
+    text-align: center;
+    align-items: center;
+    bottom: 20px;
+    background: black;
+    position: absolute;
+    width: 270px;
+    left: 50%;
+    gap:  15px;
+    margin-left: -190px;
+    grid-template-columns: max-content 1fr max-content;
+}
+section div.downlod img.img1{
+    height: 100%;
+    width: auto;
+}
+section div.downlod img.img2{
+    height: 100%;
+    width: auto;
+}
+.textdnld{
+    font-size: 15px;
+    margin-top: 10px;
+}
+.media.s3 img{
+    width: 400px;
+    position: relative;
+    z-index: 5;
+
+ 
+ }
+ .media.s3 video{
+     width: 250px;
+     position: absolute;
+     top: 30px;
+     left: 75px;
+ 
+ }
+ section{
+    display: grid;
+    padding: 70px 35px;
+    align-items: center;
+    border-top: 8px solid #222;
+ }
+
+ /*-------------faq-------------*/
+ .faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+ }
+ .faq h2{
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: normal;
+    
+ }
+ .accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+
+ }
+ .accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+ }
+ .accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+ }
+ label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+ }
+ input[type="radio"]{
+    display: none;
+ }
+ .accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+
+ }
+.accordion input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+/*---------footer-------*/
+.footer{
+  
+   margin-top: 100px;
+}
+.footer h4{
+    color: rgba(255, 255, 255, 0.7);
+    margin-left:190px ;
+
+}
+.tablerow{
+    margin-left: 100px;
+}
+td{
+    
+    padding-left: 90px;
+    padding-top: 15px;
+    
+}
+td a{
+    color: rgba(255, 255, 255, 0.7);
+}
+.lasttext {margin-top:30px ;
+    margin-left: 190px;
+     color: rgba(255, 255, 255, 0.7) ;
+      margin-bottom: 100px;
+    }
+  
+    
